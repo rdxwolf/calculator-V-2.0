@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Mobile Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="./image/calculator.png">
+</head>
+<body>
+
+<div class="phone-body">
+    <div class="speaker-grill"></div>
+    <div class="brand">Nokia</div>
+    
+    <div class="calculator">
+        <div class="display-container retro-screen">
+            <div class="top-bar">
+                <button id="theme-btn" title="Toggle Backlight">💡</button>
+            </div>
+            
+            <div id="history-container">
+                <div id="history"></div>
+            </div>
+
+            <div id="preview"></div>
+
+            <input
+                type="text"
+                id="display"
+                readonly
+                placeholder="0"
+            >
+        </div>
+
+        <div class="phone-keypad">
+            <button data-value="(">(</button>
+            <button data-value=")">)</button>
+            <button id="clear-btn">C</button>
+            <button id="delete-btn">⌫</button>
+
+            <button data-value="7">7</button>
+            <button data-value="8">8</button>
+            <button data-value="9">9</button>
+            <button data-value="/" class="operator">÷</button>
+
+            <button data-value="4">4</button>
+            <button data-value="5">5</button>
+            <button data-value="6">6</button>
+            <button data-value="*" class="operator">×</button>
+
+            <button data-value="1">1</button>
+            <button data-value="2">2</button>
+            <button data-value="3">3</button>
+            <button data-value="-" class="operator">−</button>
+
+            <button data-value="0">0</button>
+            <button data-value=".">.</button>
+            <button data-value="+" class="operator">+</button>
+            <button id="equals-btn">=</button>
+        </div>
+    </div>
+</div>
+
+<script src="./script.js"></script>
+
+</body>
+</html>
